@@ -16,11 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    color: rgba(0, 0, 0, 0.5);
-}
-
-.add-book {
-
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .library {
