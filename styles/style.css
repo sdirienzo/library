@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows: 15% 15% 70%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+
+}
+
+.add-book {
+
+}
+
+.library {
+
+}
