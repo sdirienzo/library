@@ -22,3 +22,16 @@ function addBookToLibrary() {
         myLibrary.push(book);
     }
 }
+
+function clearInputFields() {
+    document.getElementById("inputTitle").value = "";
+    document.getElementById("inputAuthor").value = "";
+    document.getElementById("inputPages").value = "";
+    document.getElementById("readNotRead").value = "true";
+}
+
+const addBook = document.getElementById("addBookBtn");
+addBook.addEventListener("click", function() {
+    addBookToLibrary();
+    clearInputFields();
+});
