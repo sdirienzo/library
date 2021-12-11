@@ -16,18 +16,21 @@
             <h1>The Library</h1>
         </div>
         <div class="add-book">
-            <form class="add-book-form row">
+            <form class="add-book-form row needs-validation" novalidate>
                 <div class="col-md-4">
                     <label for="inputTitle" id="inputTitleLabel" class="form-label row">Title</label>
-                    <input type="text" id="inputTitle" class="form-control row">
+                    <input type="text" id="inputTitle" class="form-control row" required>
+                    <div class="invalid-feedback">Please enter a title</div>
                 </div>
                 <div class="col-md-4">
                     <label for="inputAuthor" id="inputAuthorLabel" class="form-label row">Author</label>
-                    <input type="text" id="inputAuthor" class="form-control row">
+                    <input type="text" id="inputAuthor" class="form-control row" required>
+                    <div class="invalid-feedback">Please enter an author</div>
                 </div>
                 <div class="col-md-2">
                     <label for="inputPages" id="inputPageslabel" class="form-label row">Pages</label>
-                    <input type="text" id="inputPages" class="form-control row">
+                    <input type="number" id="inputPages" class="form-control row" min="0" required>
+                    <div class="invalid-feedback">Please enter pages >= 0</div>
                 </div>
                 <div class="col-md-2">
                     <label for="readNotRead" id="readNotReadLabel" class="form-label row">Status</label>
@@ -37,7 +40,7 @@
                     </select>
                 </div>
                 <div class="mt-4 ps-0">
-                    <button type="button" id="addBookBtn" class="btn btn-outline-primary col-md-1">Add</button>
+                    <button type="submit" id="addBookBtn" class="btn btn-outline-primary col-md-1">Add</button>
                 </div>
             </form>
         </div>
